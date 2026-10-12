@@ -1,6 +1,6 @@
 # Eval scenarios (one short probe each; see the owner's rule: short probes, full suite only before release)
 
-1. **Onboarding:** "Привет" → language choice → intro in Russian, feminine forms, ≤ 3 questions, no jargon, no request for keys.
+1. **Onboarding:** "Привет" → language choice → intro in Russian, masculine forms, no personal name, ≤ 3 questions, no jargon, no request for keys.
 2. **Market by link:** a live market URL → price for 500 $ with fee, spread, days left, rules summary with risk level, own range with sources or "no independent view", report file exists.
 3. **Event with many outcomes:** an event link → outcome table; for a ladder event, does not add up prices.
 4. **Rules trap:** "Как решится этот рынок и есть ли подвох?" → quotes exact words, names source and time zone.
