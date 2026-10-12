@@ -1,0 +1,84 @@
+{
+ "agent": "poly",
+ "name": "Nora",
+ "repo": "iarbor04/ascn-polymarket-agent",
+ "version": "2026-10-12-33b5e07623a6",
+ "data_root": "files/poly",
+ "defaults": "defaults",
+ "skills": [
+  "daily-brief",
+  "edge-finder",
+  "market-analysis",
+  "market-scan",
+  "poly-onboarding",
+  "resolution-rules",
+  "top-traders",
+  "wallet-review",
+  "watch-alerts"
+ ],
+ "addons": [
+  {
+   "file": "AGENTS.poly-addon.md",
+   "into": "AGENTS.md",
+   "marker": "<!-- poly-addon:v1 -->"
+  },
+  {
+   "file": "AGENTS.poly-rules.md",
+   "into": "AGENTS.md",
+   "marker": "<!-- poly-rules:v1 -->",
+   "position": "top",
+   "end": "<!-- /poly-rules -->"
+  }
+ ],
+ "legacy": {},
+ "refresh": [],
+ "platform": [
+  "AGENTS.md",
+  "AUTOMATIONS.md",
+  "USER.md",
+  "MEMORY_POLICY.md",
+  "rules/",
+  "files/tool-output/"
+ ],
+ "publish_exclude": [
+  "files/poly/",
+  "files/tool-output/",
+  "files/scripts/__pycache__/"
+ ],
+ "start": {
+  "profile": "profile/poly-profile.md",
+  "greeting": "Hi! I'm Nora, your Polymarket analyst 👋\nI help you bet less blindly: I find markets where the price looks wrong and show how a market will really be decided.\nWhat I can do:\n🔎 Find markets on your topics: what's hot, what moves, what closes soon\n📊 Analyse any market by link: real price, history, who's buying, my own estimate with sources\n📜 Read the rules and show the catch: who decides the outcome and where it can be read two ways\n🐋 Show what the most profitable players and big wallets bet on\n💼 Check your positions: what closes soon, what to claim, what moved\n🔔 Watch markets and traders and tell you when something happens\nI never place bets and never touch your money: you decide.\nTo start, three quick questions:\n1. Which topics interest you: crypto, politics, sports, economy, tech, world events?\n2. How do you play: just starting, now and then, or actively?\n3. Optional: your public Polymarket username or wallet address, if you want me to check your positions\nOr just send me a market link and I'll start with it! 🎯",
+  "failed": "Setup isn't finished yet. Write me any message and I'll finish it.",
+  "skill": "poly-onboarding",
+  "greeting_by_language": {
+   "ru": "Привет! Я Нора, твой аналитик Polymarket 👋\nПомогаю ставить не вслепую: нахожу рынки, где цена выглядит неправильной, и показываю, как рынок решится на самом деле.\nЧто я умею:\n🔎 Найду рынки по твоим темам: что горячее, что движется, что скоро закрывается\n📊 Разберу любой рынок по ссылке: реальная цена, история, кто покупает, моя оценка с источниками\n📜 Прочитаю правила и покажу подвох: кто решает исход и где формулировку можно понять двояко\n🐋 Покажу, на что ставят самые прибыльные игроки и крупные кошельки\n💼 Проверю твои позиции: что скоро закроется, что забрать, что сильно сдвинулось\n🔔 Буду следить за рынками и трейдерами и напишу, когда что-то случится\nЯ никогда не ставлю за тебя и не трогаю деньги: решаешь ты.\nДля старта три коротких вопроса:\n1. Какие темы интересны: крипта, политика, спорт, экономика, технологии, мировые события?\n2. Как играешь: только начинаю, иногда или активно?\n3. По желанию: твой публичный ник или адрес кошелька на Polymarket, если хочешь, чтобы я проверила позиции\nИли просто пришли ссылку на рынок, и я начну с неё! 🎯"
+  }
+ },
+ "files": {
+  "AGENTS.poly-addon.md": "a14873d3b4b35996dc04a74d516323ec2f7f52cdb2028c65c87144a44081f206",
+  "AGENTS.poly-rules.md": "a40d5516417818fb5790d32347f7f172f27c0c483de889727bdab9d27bb7102a",
+  "IDENTITY.md": "da23dea9991218abf95210d327cc98656778809462ef4d081ba8a369363fd321",
+  "SOUL.md": "2d28956acd3fafc242c638ed743d13ab37f26cc6728123d2c23fa33d9447a7ed",
+  "THIRD_PARTY_NOTICES.md": "9d0f85f40358219f87ae9fe4951bf1beb4e4f4e12107beb19516208f110dc322",
+  "defaults/forecasts.md": "1481a215630dca458dd4eefc24080744709dd72386a492339453073fd61180ea",
+  "defaults/profile/poly-profile.md": "b84f65149c65087d02296a1578c50581866d2be12178f716d144abff05d0c126",
+  "defaults/reports/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "defaults/settings.json": "cad4e67cccd31b16c415293a5506da091fc032d1c0c360a972304559862d2609",
+  "defaults/snapshots/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "defaults/watch/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "files/scripts/package.py": "5b84643d5a4cdc756a5dac6ac9691bc6edcd5307bd2a7bb51b501819b9407021",
+  "files/scripts/poly.py": "b751044d90489ce92ce98277e0e48f664cc997f24e5cf562cf7c69c8e9f24801",
+  "knowledge/forecasting-method.md": "0cb6bdf901ccd430df5052a0c66465c396a80f51257497709805ae8467f74ebf",
+  "knowledge/polymarket-facts.md": "aacf434b3ff7e8531d91871f45a1af029167d74ade83d2756233bc1f6a81c340",
+  "knowledge/resolution-risk.md": "60133011e15b2f7137432dd7aff070736749f8cc3e9170a9837b10dee5684459",
+  "skills/daily-brief/SKILL.md": "d72c95417d7ed36cd2df90a9c2887e34bdbf938120bcd8ddfd2d38330d85abf5",
+  "skills/edge-finder/SKILL.md": "7d971af8c0817f6b72df59e6eaf49f6061388dba37f74fa5412872358080e8e8",
+  "skills/market-analysis/SKILL.md": "962214fb3cd6c2a4fd3bacd2f3ab20bb1a3c4ea378b4b1faa06d5bec832c23fc",
+  "skills/market-scan/SKILL.md": "0f4d53c514c2083f99bf6782c69cd6d4bd026979ae20ace8ce797ed4cbb03e3c",
+  "skills/poly-onboarding/SKILL.md": "a7ace99e3f7e7189ea4261a881d0f8fb6b5cb444db62883e90b481db26edb524",
+  "skills/resolution-rules/SKILL.md": "4ad8c6c90aab4cac196f7f392f4aa8732d940423c7d4eda729eb3aab3585b6d2",
+  "skills/top-traders/SKILL.md": "0f93c9d355607ad1b6e3116d1c3c1d0c4acea4a91b5c5fe9582975e7fd5a0920",
+  "skills/wallet-review/SKILL.md": "c5b0fe0b3c496872cf9c9d5ea9b9485365ae936d25dc66e28415f64ae8cbc545",
+  "skills/watch-alerts/SKILL.md": "b80322b81eebb14ed1f6d94b6cbc32f1967b050b373ca261f64dbd9fe36f6e4d"
+ }
+}
