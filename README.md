@@ -22,4 +22,4 @@ An ASCN (ascn.ai) marketplace AI employee that analyses Polymarket prediction ma
 
 ## Install
 
-Use `marketplace/install-or-update-from-github.md` in a workspace with the GitHub integration; start prompt `marketplace/startup-task.md`; soul field `marketplace/soul-intro.md`. After any change: `python3 tools/build_manifest.py && python3 tools/build_manifest.py --check`.
+Install with `marketplace/install-or-update-public.md` (the repo is public: the workspace downloads the bundle over HTTPS and checks every file's sha256; no GitHub integration needed) or `marketplace/install-or-update-from-github.md`; start prompt `marketplace/startup-task.md`; soul field `marketplace/soul-intro.md`. After any change: `python3 tools/build_manifest.py && python3 tools/build_manifest.py --check`.
