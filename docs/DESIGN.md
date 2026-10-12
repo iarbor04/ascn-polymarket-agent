@@ -6,5 +6,5 @@
 - **Arithmetic in the script:** fill price for a size from the book, taker fee, edge, break-even, return, annualized (only from 3 days left), holder concentration, watch diffs.
 - **Kalshi search** crawls open events (15 pages × 200) and matches all query words; ~20 s. No shared IDs exist, so the skill checks wording before comparing.
 - **Alerts:** one cron task only after an explicit yes, at most hourly; the check sends nothing when nothing happened (saves credits).
-- **Name** Nora is a placeholder the owner can change (IDENTITY.md, soul-intro, package.config.json greetings, rules line 9).
+- **No personal name** (owner, 2026-10-12): the agent is called by its role, «аналитик Polymarket».
 - **Not possible / not included:** placing bets, Polymarket comments sentiment, X/Twitter monitoring (needs paid API), bookmaker odds API (paid; the agent uses web search for odds when needed).

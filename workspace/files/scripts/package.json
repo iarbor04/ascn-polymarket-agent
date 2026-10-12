@@ -1,8 +1,8 @@
 {
  "agent": "poly",
- "name": "Nora",
+ "name": "Polymarket Analyst",
  "repo": "iarbor04/ascn-polymarket-agent",
- "version": "2026-10-12-33b5e07623a6",
+ "version": "2026-10-12-3d9ca17280ef",
  "data_root": "files/poly",
  "defaults": "defaults",
  "skills": [
@@ -47,18 +47,18 @@
  ],
  "start": {
   "profile": "profile/poly-profile.md",
-  "greeting": "Hi! I'm Nora, your Polymarket analyst 👋\nI help you bet less blindly: I find markets where the price looks wrong and show how a market will really be decided.\nWhat I can do:\n🔎 Find markets on your topics: what's hot, what moves, what closes soon\n📊 Analyse any market by link: real price, history, who's buying, my own estimate with sources\n📜 Read the rules and show the catch: who decides the outcome and where it can be read two ways\n🐋 Show what the most profitable players and big wallets bet on\n💼 Check your positions: what closes soon, what to claim, what moved\n🔔 Watch markets and traders and tell you when something happens\nI never place bets and never touch your money: you decide.\nTo start, three quick questions:\n1. Which topics interest you: crypto, politics, sports, economy, tech, world events?\n2. How do you play: just starting, now and then, or actively?\n3. Optional: your public Polymarket username or wallet address, if you want me to check your positions\nOr just send me a market link and I'll start with it! 🎯",
+  "greeting": "Hi! I'm your Polymarket analyst 👋\nI help you bet less blindly: I find markets where the price looks wrong and show how a market will really be decided.\nWhat I can do:\n🔎 Find markets on your topics: what's hot, what moves, what closes soon\n📊 Analyse any market by link: real price, history, who's buying, my own estimate with sources\n📜 Read the rules and show the catch: who decides the outcome and where it can be read two ways\n🐋 Show what the most profitable players and big wallets bet on\n💼 Check your positions: what closes soon, what to claim, what moved\n🔔 Watch markets and traders and tell you when something happens\nI never place bets and never touch your money: you decide.\nTo start, three quick questions:\n1. Which topics interest you: crypto, politics, sports, economy, tech, world events?\n2. How do you play: just starting, now and then, or actively?\n3. Optional: your public Polymarket username or wallet address, if you want me to check your positions\nOr just send me a market link and I'll start with it! 🎯",
   "failed": "Setup isn't finished yet. Write me any message and I'll finish it.",
   "skill": "poly-onboarding",
   "greeting_by_language": {
-   "ru": "Привет! Я Нора, твой аналитик Polymarket 👋\nПомогаю ставить не вслепую: нахожу рынки, где цена выглядит неправильной, и показываю, как рынок решится на самом деле.\nЧто я умею:\n🔎 Найду рынки по твоим темам: что горячее, что движется, что скоро закрывается\n📊 Разберу любой рынок по ссылке: реальная цена, история, кто покупает, моя оценка с источниками\n📜 Прочитаю правила и покажу подвох: кто решает исход и где формулировку можно понять двояко\n🐋 Покажу, на что ставят самые прибыльные игроки и крупные кошельки\n💼 Проверю твои позиции: что скоро закроется, что забрать, что сильно сдвинулось\n🔔 Буду следить за рынками и трейдерами и напишу, когда что-то случится\nЯ никогда не ставлю за тебя и не трогаю деньги: решаешь ты.\nДля старта три коротких вопроса:\n1. Какие темы интересны: крипта, политика, спорт, экономика, технологии, мировые события?\n2. Как играешь: только начинаю, иногда или активно?\n3. По желанию: твой публичный ник или адрес кошелька на Polymarket, если хочешь, чтобы я проверила позиции\nИли просто пришли ссылку на рынок, и я начну с неё! 🎯"
+   "ru": "Привет! Я твой аналитик Polymarket 👋\nПомогаю ставить не вслепую: нахожу рынки, где цена выглядит неправильной, и показываю, как рынок решится на самом деле.\nЧто я умею:\n🔎 Найду рынки по твоим темам: что горячее, что движется, что скоро закрывается\n📊 Разберу любой рынок по ссылке: реальная цена, история, кто покупает, моя оценка с источниками\n📜 Прочитаю правила и покажу подвох: кто решает исход и где формулировку можно понять двояко\n🐋 Покажу, на что ставят самые прибыльные игроки и крупные кошельки\n💼 Проверю твои позиции: что скоро закроется, что забрать, что сильно сдвинулось\n🔔 Буду следить за рынками и трейдерами и напишу, когда что-то случится\nЯ никогда не ставлю за тебя и не трогаю деньги: решаешь ты.\nДля старта три коротких вопроса:\n1. Какие темы интересны: крипта, политика, спорт, экономика, технологии, мировые события?\n2. Как играешь: только начинаю, иногда или активно?\n3. По желанию: твой публичный ник или адрес кошелька на Polymarket, если хочешь, чтобы я проверил позиции\nИли просто пришли ссылку на рынок, и я начну с неё! 🎯"
   }
  },
  "files": {
   "AGENTS.poly-addon.md": "a14873d3b4b35996dc04a74d516323ec2f7f52cdb2028c65c87144a44081f206",
-  "AGENTS.poly-rules.md": "a40d5516417818fb5790d32347f7f172f27c0c483de889727bdab9d27bb7102a",
-  "IDENTITY.md": "da23dea9991218abf95210d327cc98656778809462ef4d081ba8a369363fd321",
-  "SOUL.md": "2d28956acd3fafc242c638ed743d13ab37f26cc6728123d2c23fa33d9447a7ed",
+  "AGENTS.poly-rules.md": "f31279efea211684349c70e02a84097eb7392a63d54464ef4b53dae05c419ea7",
+  "IDENTITY.md": "57d9292e42fa6fbd291244c01cdaa4f354ba3e8397854da853c5b43474a28749",
+  "SOUL.md": "249a9d7266f17e9ff709f73683c4a6a5b6b7556690c9517584cac7b7f4cb6894",
   "THIRD_PARTY_NOTICES.md": "9d0f85f40358219f87ae9fe4951bf1beb4e4f4e12107beb19516208f110dc322",
   "defaults/forecasts.md": "1481a215630dca458dd4eefc24080744709dd72386a492339453073fd61180ea",
   "defaults/profile/poly-profile.md": "b84f65149c65087d02296a1578c50581866d2be12178f716d144abff05d0c126",

@@ -1,4 +1,4 @@
-# ascn-polymarket-agent — Nora, Polymarket analyst
+# ascn-polymarket-agent — Polymarket analyst
 
 An ASCN (ascn.ai) marketplace AI employee that analyses Polymarket prediction markets on live public data. It never trades.
 
