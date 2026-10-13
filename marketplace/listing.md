@@ -2,24 +2,24 @@
 
 ## Поля формы
 
-- **name_ru:** Аналитик Polymarket — ИИ-аналитик рынков предсказаний
-- **name_en:** Polymarket Analyst — AI analyst for prediction markets
-- **slug:** ai-polymarket-analyst
+- **name_ru:** Аналитика Polymarket с ИИ: рынки, правила, киты
+- **name_en:** AI Polymarket Analytics: Odds, Rules, Whales
+- **slug:** ai-polymarket-analytics
 - **cat_ru / cat_en:** Крипто, рынки предсказаний / Crypto, Prediction markets
 - **integrations:** Polymarket (открытые данные), Kalshi (открытые данные)
-- **related:** Скринер аномальных объёмов
+- **related:** Скринер криптовалют, Торговый ИИ-помощник для Bybit, BingX, Bitget и MEXC
 - **short_ru:** ИИ-аналитик Polymarket: разбирает рынок по ссылке, показывает реальную цену входа с комиссией, читает правила, сверяет с Kalshi и следит за крупными игроками. Сам не ставит.
 - **short_en:** An AI analyst for Polymarket: breaks down any market by link, shows the real entry price after fees, reads the rules, compares with Kalshi and tracks the big players. It never bets for you.
-- **seo_title_ru:** ИИ-аналитик Polymarket: разбор рынков, правила, киты
-- **seo_title_en:** AI Polymarket Analyst: Market Breakdowns, Rules, Whales
-- **seo_desc_ru:** Разбор любого рынка Polymarket: цена входа на вашу сумму с комиссией, правила и подвохи, оценка вероятности с источниками, позиции топ-трейдеров, проверка кошелька.
-- **seo_desc_en:** Break down any Polymarket market: entry price for your stake after fees, rules and their traps, a sourced probability estimate, top-trader positions and a wallet check.
+- **seo_title_ru:** Аналитика Polymarket с ИИ: рынки, правила, киты
+- **seo_title_en:** Polymarket Analytics AI: Odds, Whales, Kalshi
+- **seo_desc_ru:** ИИ-аналитик Polymarket: разбор рынка по ссылке, цена входа с комиссией, правила и подвохи, сравнение с Kalshi, лидерборд и позиции китов. Сам не ставит.
+- **seo_desc_en:** Polymarket analytics with AI: entry price after fees, rules and their traps, Kalshi vs Polymarket odds, leaderboard and whale tracker. It never bets for you.
 
 ## Страница агента (RU)
 
 ### Заголовок
 
-**Прежде чем ставить на Polymarket, узнайте, сколько на самом деле стоит вход и по каким правилам решится рынок**
+**Аналитика Polymarket с ИИ: узнайте, сколько на самом деле стоит вход и по каким правилам решится рынок, до ставки**
 
 Аналитик разбирает рынок по ссылке на живых данных: цену покупки на вашу сумму, правила, крупных игроков и сравнение с Kalshi, американской площадкой с такими же рынками. Решение и деньги остаются у вас.
 
@@ -75,6 +75,8 @@
 
 **Почему цена на экране не равна цене входа?** На тонком рынке крупная покупка сначала забирает дешёвые заявки, потом всё более дорогие, и сверху добавляется комиссия. Аналитик считает цену именно на вашу сумму.
 
+**Что показывает по лидерборду Polymarket?** Самых прибыльных игроков за день, неделю, месяц и всё время, их открытые позиции и общие ставки топ-трейдеров. Крупные входы со свежих кошельков помечаются отдельно.
+
 **Можно повторять за китами?** Аналитик показывает их позиции, но крупная ставка бывает хеджем, ошибкой или попыткой сдвинуть цену. Поэтому это повод присмотреться, а не сигнал.
 
 **Polymarket доступен в моей стране?** Аналитику доступ не нужен: он читает открытые данные. Можно ли ставить из вашей страны, смотрите в правилах Polymarket.
@@ -85,7 +87,7 @@
 
 ### Headline
 
-**Before you bet on Polymarket, see what the entry really costs and how the market will resolve**
+**Polymarket analytics with AI: see what the entry really costs and how the market will resolve, before you bet**
 
 The analyst breaks down any market from a link on live data: the price for your stake, the rules, the big players and a Kalshi comparison. The decision and the money stay with you.
 
@@ -105,3 +107,11 @@ Market breakdowns with the real entry price, rules in plain words, a sourced pro
 ### What it won't do
 
 It never bets, asks for wallet keys, names "sure things", tells you how much to stake, helps chase losses or explains how to get around access restrictions.
+
+### FAQ
+
+**Kalshi vs Polymarket: can it compare odds?** Yes. It finds the same event on Kalshi and checks that the rules and dates match before comparing prices.
+
+**Is there a Polymarket whale tracker?** Yes: the leaderboard by period, top traders' open positions, large trades and fresh wallets betting big, with the note that a big bet can be a hedge.
+
+**Is this a Polymarket bot that bets?** No. It analyses and alerts; you place bets yourself.
