@@ -2,7 +2,7 @@
  "agent": "poly",
  "name": "Polymarket Analyst",
  "repo": "iarbor04/ascn-polymarket-agent",
- "version": "2026-10-13-e3d72dfe9be7",
+ "version": "2026-10-13-16263073f657",
  "data_root": "files/poly",
  "defaults": "defaults",
  "skills": [
@@ -56,7 +56,7 @@
  },
  "files": {
   "AGENTS.poly-addon.md": "a14873d3b4b35996dc04a74d516323ec2f7f52cdb2028c65c87144a44081f206",
-  "AGENTS.poly-rules.md": "c910d112c1528f705a6dc93d15955463017ca605e807e7838f0ae53cc8b067a4",
+  "AGENTS.poly-rules.md": "f8f1541b608f822f228bf4e805d754d44638e36bcc9e6dad2cf6d8bce8d76f9f",
   "IDENTITY.md": "57d9292e42fa6fbd291244c01cdaa4f354ba3e8397854da853c5b43474a28749",
   "SOUL.md": "249a9d7266f17e9ff709f73683c4a6a5b6b7556690c9517584cac7b7f4cb6894",
   "THIRD_PARTY_NOTICES.md": "9d0f85f40358219f87ae9fe4951bf1beb4e4f4e12107beb19516208f110dc322",
