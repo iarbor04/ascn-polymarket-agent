@@ -2,7 +2,7 @@
  "agent": "poly",
  "name": "Polymarket Analyst",
  "repo": "iarbor04/ascn-polymarket-agent",
- "version": "2026-10-13-0a9225cf5921",
+ "version": "2026-10-13-2664b39f74a2",
  "data_root": "files/poly",
  "defaults": "defaults",
  "skills": [
@@ -79,6 +79,6 @@
   "skills/resolution-rules/SKILL.md": "4ad8c6c90aab4cac196f7f392f4aa8732d940423c7d4eda729eb3aab3585b6d2",
   "skills/top-traders/SKILL.md": "0f93c9d355607ad1b6e3116d1c3c1d0c4acea4a91b5c5fe9582975e7fd5a0920",
   "skills/wallet-review/SKILL.md": "0cdc171e9a37b73fb8008edf81d186e8f739ae5efc44cc30355cd4f325daa98e",
-  "skills/watch-alerts/SKILL.md": "b80322b81eebb14ed1f6d94b6cbc32f1967b050b373ca261f64dbd9fe36f6e4d"
+  "skills/watch-alerts/SKILL.md": "317537761110172d6c26bd541ac71e9235ad2e88b03136b9e8b744d23ef28d6f"
  }
 }
