@@ -3,7 +3,7 @@
 ## Поля формы
 
 - **name_ru:** Аналитика Polymarket с ИИ: рынки, правила, киты
-- **name_en:** AI Polymarket Analytics: Odds, Rules, Whales
+- **name_en:** AI Polymarket Analytics & Wallet Tracker
 - **slug:** ai-polymarket-analytics
 - **cat_ru / cat_en:** Крипто, рынки предсказаний / Crypto, Prediction markets
 - **integrations:** Polymarket (открытые данные), Kalshi (открытые данные)
@@ -11,9 +11,9 @@
 - **short_ru:** ИИ-аналитик Polymarket: разбирает рынок по ссылке, показывает реальную цену входа с комиссией, читает правила, сверяет с Kalshi и следит за крупными игроками. Сам не ставит.
 - **short_en:** An AI analyst for Polymarket: breaks down any market by link, shows the real entry price after fees, reads the rules, compares with Kalshi and tracks the big players. It never bets for you.
 - **seo_title_ru:** Аналитика Polymarket с ИИ: рынки, правила, киты
-- **seo_title_en:** Polymarket Analytics AI: Odds, Whales, Kalshi
-- **seo_desc_ru:** ИИ-аналитик Polymarket: разбор рынка по ссылке, цена входа с комиссией, правила и подвохи, сравнение с Kalshi, лидерборд и позиции китов. Сам не ставит.
-- **seo_desc_en:** Polymarket analytics with AI: entry price after fees, rules and their traps, Kalshi vs Polymarket odds, leaderboard and whale tracker. It never bets for you.
+- **seo_title_en:** Polymarket Wallet Tracker & Analytics AI
+- **seo_desc_ru:** ИИ-аналитик Polymarket: разбор рынка, цена входа с комиссией, правила и подвохи, проверка кошелька, лидерборд и киты, сравнение с Kalshi. Сам не ставит.
+- **seo_desc_en:** Polymarket wallet tracker and analytics with AI: entry price after fees, rules and traps, Kalshi vs Polymarket odds, top-trader positions. It never bets.
 
 ## Страница агента (RU)
 
@@ -73,6 +73,12 @@
 
 **Это сигналы, по которым можно ставить?** Нет. Это разбор: цена, правила, риски и оценка с источниками. Оценка может ошибаться, и аналитик это пишет.
 
+**Как работает Polymarket?** Каждый исход торгуется как акция от 0 до 1 доллара: если исход случился, акция приносит 1 доллар, если нет — 0. Цена акции — это то, во сколько рынок оценивает шанс. Аналитик показывает, сколько вы реально заплатите и по каким правилам рынок решится.
+
+**Какие комиссии на Polymarket?** Комиссию платит тот, кто покупает по готовой цене из стакана. Её размер зависит от категории рынка и от цены, на рынках около 50% она самая большая. Аналитик включает её в цену входа для вашей суммы.
+
+**Можно проверить чужой кошелёк Polymarket?** Да. По публичному нику или адресу аналитик покажет прибыль, место в рейтинге, открытые позиции и последние сделки.
+
 **Почему цена на экране не равна цене входа?** На тонком рынке крупная покупка сначала забирает дешёвые заявки, потом всё более дорогие, и сверху добавляется комиссия. Аналитик считает цену именно на вашу сумму.
 
 **Что показывает по лидерборду Polymarket?** Самых прибыльных игроков за день, неделю, месяц и всё время, их открытые позиции и общие ставки топ-трейдеров. Крупные входы со свежих кошельков помечаются отдельно.
@@ -113,5 +119,11 @@ It never bets, asks for wallet keys, names "sure things", tells you how much to 
 **Kalshi vs Polymarket: can it compare odds?** Yes. It finds the same event on Kalshi and checks that the rules and dates match before comparing prices.
 
 **Is there a Polymarket whale tracker?** Yes: the leaderboard by period, top traders' open positions, large trades and fresh wallets betting big, with the note that a big bet can be a hedge.
+
+**How does Polymarket work?** Each outcome trades as a share from 0 to 1 USD; it pays 1 USD if the outcome happens. The analyst shows what you will really pay and how the market resolves.
+
+**What are Polymarket fees?** Takers pay a fee that depends on the category and on the price, highest near 50%. The analyst includes it in the entry price for your stake.
+
+**Can it track any Polymarket account or wallet?** Yes: profit, leaderboard rank, open positions and recent trades by public username or address. It shows copy-trading ideas only as facts, never as signals.
 
 **Is this a Polymarket bot that bets?** No. It analyses and alerts; you place bets yourself.
