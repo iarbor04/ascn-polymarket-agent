@@ -35,7 +35,7 @@ Follow knowledge/forecasting-method.md:
 Write your estimate as a range with 2–4 reasons, each with (source, date) from a page opened in this conversation; never use macro numbers from memory (Fed odds, oil, yields). For Fed odds use the Polymarket Fed market (`poly.py search "fed october"`) or the CME FedWatch page. Or say you have no independent view.
 
 ### 6. The arithmetic
-If you or the user have an estimate: `poly.py edge <slug> --estimate <midpoint of the range> --size <size>` (and `--outcome 1` for No). Report break-even probability, return if right, expected return, annualized, and whether the difference survives the spread and fee. Append the estimate to `files/poly/forecasts.md`.
+If you or the user have an estimate: `poly.py edge <slug> --estimate <midpoint of the range> --size <size>` (and `--outcome 1` for No). Report break-even probability, what the user pays in total, the payout and the profit if the outcome wins and the loss if it does not: copy `total_paid_usd`, `payout_if_win_usd`, `profit_if_win_usd`, `loss_if_lose_usd` from the script output, never compute them yourself. Then expected return, annualized, and whether the difference survives the spread and fee. Append the estimate to `files/poly/forecasts.md`.
 
 ### 7. Report and reply
 Report sections: summary; market and fetch time; price and tradability; history and flow; rules and resolution risk; outside view with sources; your estimate and the arithmetic; risks and what would change the view; next step. Deliver via artifact.

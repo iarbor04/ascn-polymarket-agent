@@ -284,10 +284,15 @@ def book_stats(token, size_usd, rate=0.0):
                       "avg_price": round(cost / shares, 4) if shares else None,
                       "slippage_vs_best": round(cost / shares - asks[0][0], 4) if shares else None,
                       "fully_filled": left <= 1e-6}
+        fee = 0.0
         if rate and shares:
             avg = cost / shares
             fee = shares * rate * avg * (1 - avg)
             res["buy"].update({"taker_fee_usd": round(fee, 2), "avg_price_with_fee": round((cost + fee) / shares, 4)})
+        if shares:
+            res["buy"].update({"total_paid_usd": round(cost + fee, 2), "payout_if_win_usd": round(shares, 2),
+                               "profit_if_win_usd": round(shares - cost - fee, 2), "loss_if_lose_usd": round(cost + fee, 2),
+                               "note": "Each share pays $1 if this outcome wins. Quote these numbers; do not recompute them."})
     return res
 
 
