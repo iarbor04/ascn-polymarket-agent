@@ -32,7 +32,7 @@ Follow knowledge/forecasting-method.md:
 - `poly.py kalshi "<2-3 key words>"` for the same event on Kalshi; compare wording and dates before comparing prices.
 - At most two web searches for the freshest facts (news, polls, official data, bookmaker odds) on the exact question.
 - Base rate where one exists.
-Write your estimate as a range with 2–4 reasons and sources, or say you have no independent view.
+Write your estimate as a range with 2–4 reasons, each with (source, date) from a page opened in this conversation; never use macro numbers from memory (Fed odds, oil, yields). For Fed odds use the Polymarket Fed market (`poly.py search "fed october"`) or the CME FedWatch page. Or say you have no independent view.
 
 ### 6. The arithmetic
 If you or the user have an estimate: `poly.py edge <slug> --estimate <midpoint of the range> --size <size>` (and `--outcome 1` for No). Report break-even probability, return if right, expected return, annualized, and whether the difference survives the spread and fee. Append the estimate to `files/poly/forecasts.md`.

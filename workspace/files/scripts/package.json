@@ -2,7 +2,7 @@
  "agent": "poly",
  "name": "Polymarket Analyst",
  "repo": "iarbor04/ascn-polymarket-agent",
- "version": "2026-10-13-4d20b1a93dc0",
+ "version": "2026-10-13-e6ecf4c0eff6",
  "data_root": "files/poly",
  "defaults": "defaults",
  "skills": [
@@ -73,7 +73,7 @@
   "knowledge/resolution-risk.md": "60133011e15b2f7137432dd7aff070736749f8cc3e9170a9837b10dee5684459",
   "skills/daily-brief/SKILL.md": "c08cf039ff0bb2900a6a973ebdc82489e2e806655bdb3786e0a7cfd7b07aaae7",
   "skills/edge-finder/SKILL.md": "7d971af8c0817f6b72df59e6eaf49f6061388dba37f74fa5412872358080e8e8",
-  "skills/market-analysis/SKILL.md": "962214fb3cd6c2a4fd3bacd2f3ab20bb1a3c4ea378b4b1faa06d5bec832c23fc",
+  "skills/market-analysis/SKILL.md": "b9b74b6cb0421bcb7b7780f72938698041dba795be8a99ab3eb94227868972aa",
   "skills/market-scan/SKILL.md": "0f4d53c514c2083f99bf6782c69cd6d4bd026979ae20ace8ce797ed4cbb03e3c",
   "skills/poly-onboarding/SKILL.md": "a7ace99e3f7e7189ea4261a881d0f8fb6b5cb444db62883e90b481db26edb524",
   "skills/resolution-rules/SKILL.md": "4ad8c6c90aab4cac196f7f392f4aa8732d940423c7d4eda729eb3aab3585b6d2",
