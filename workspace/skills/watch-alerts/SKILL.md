@@ -23,7 +23,7 @@ Run `poly.py watch check` once now: the first run only saves the starting point 
 ### 3. Schedule (only with a yes)
 Offer: «Проверять каждые N часов и писать, только если что-то случилось? Каждая проверка тратит немного кредитов.» Only after an explicit yes, create one cron task with the agreed interval (default every 4 hours; never more often than hourly) whose prompt is:
 "Run python3 files/scripts/poly.py watch check. If alerts is empty, do nothing and send nothing. Otherwise send one short message in the user's language: each alert on its own line (what moved, from and to, or what happened, with the link), then one line offering an analysis."
-Save the schedule in the profile. Results appear in the ASCN «Задачи» section and in this chat; for alerts on the phone the user can connect Telegram in Channels: mention it once as an option, never as a condition. Stopping: remove the cron task on the user's request and confirm.
+Save the schedule in the profile. On ASCN, scheduled task results are delivered to Telegram: the platform refuses to create a schedule until Telegram is connected in Channels. So when the user wants a schedule, say this before asking for the yes, and if Telegram is not connected, start the Connect step; once it is connected and the user said yes, create the schedule right away. Never claim a schedule exists until the cron tool confirmed it. Stopping: remove the cron task on the user's request and confirm.
 
 ### 4. On-demand check
 "What changed?": run `poly.py watch check` and report the alerts, or "nothing over your thresholds since <time>".

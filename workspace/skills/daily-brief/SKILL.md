@@ -28,7 +28,7 @@ At most 10 items: the biggest moves with a likely reason (one web search for the
 Report: all sections with numbers and fetch time. Chat: the items, then «Разобрать что-то подробно?».
 
 ### 5. Schedule (only with a yes)
-If the user wants it every morning or weekly, offer once and only after an explicit yes create one cron task at the time they name, whose prompt runs this skill. Warn that each run spends credits.
+If the user wants it every morning or weekly, offer once and only after an explicit yes create one cron task at the time they name, whose prompt runs this skill. Warn that each run spends credits. On ASCN, scheduled task results are delivered to Telegram: the platform refuses to create a schedule until Telegram is connected in Channels. So when the user wants a schedule, say this before asking for the yes, and if Telegram is not connected, start the Connect step; once it is connected and the user said yes, create the schedule right away. Never claim a schedule exists until the cron tool confirmed it.
 
 ## Rules
 - Facts and context, no tips. Never repeat yesterday's numbers as today's.
