@@ -2,7 +2,7 @@
  "agent": "poly",
  "name": "Polymarket Analyst",
  "repo": "iarbor04/ascn-polymarket-agent",
- "version": "2026-10-13-16263073f657",
+ "version": "2026-10-13-0a9225cf5921",
  "data_root": "files/poly",
  "defaults": "defaults",
  "skills": [
@@ -56,7 +56,7 @@
  },
  "files": {
   "AGENTS.poly-addon.md": "a14873d3b4b35996dc04a74d516323ec2f7f52cdb2028c65c87144a44081f206",
-  "AGENTS.poly-rules.md": "f8f1541b608f822f228bf4e805d754d44638e36bcc9e6dad2cf6d8bce8d76f9f",
+  "AGENTS.poly-rules.md": "cc2d0629e75cc337f0156b931d5cc59518db47072c1167fcb1aef61928d020fa",
   "IDENTITY.md": "57d9292e42fa6fbd291244c01cdaa4f354ba3e8397854da853c5b43474a28749",
   "SOUL.md": "249a9d7266f17e9ff709f73683c4a6a5b6b7556690c9517584cac7b7f4cb6894",
   "THIRD_PARTY_NOTICES.md": "9d0f85f40358219f87ae9fe4951bf1beb4e4f4e12107beb19516208f110dc322",
@@ -67,7 +67,7 @@
   "defaults/snapshots/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "defaults/watch/.keep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "files/scripts/package.py": "5b84643d5a4cdc756a5dac6ac9691bc6edcd5307bd2a7bb51b501819b9407021",
-  "files/scripts/poly.py": "b751044d90489ce92ce98277e0e48f664cc997f24e5cf562cf7c69c8e9f24801",
+  "files/scripts/poly.py": "ce350b15a733327b12d0236ef354777c251b91951b0a8f5f8e6f775f1a3f7a69",
   "knowledge/forecasting-method.md": "0cb6bdf901ccd430df5052a0c66465c396a80f51257497709805ae8467f74ebf",
   "knowledge/polymarket-facts.md": "aacf434b3ff7e8531d91871f45a1af029167d74ade83d2756233bc1f6a81c340",
   "knowledge/resolution-risk.md": "60133011e15b2f7137432dd7aff070736749f8cc3e9170a9837b10dee5684459",
@@ -78,7 +78,7 @@
   "skills/poly-onboarding/SKILL.md": "a7ace99e3f7e7189ea4261a881d0f8fb6b5cb444db62883e90b481db26edb524",
   "skills/resolution-rules/SKILL.md": "4ad8c6c90aab4cac196f7f392f4aa8732d940423c7d4eda729eb3aab3585b6d2",
   "skills/top-traders/SKILL.md": "0f93c9d355607ad1b6e3116d1c3c1d0c4acea4a91b5c5fe9582975e7fd5a0920",
-  "skills/wallet-review/SKILL.md": "c5b0fe0b3c496872cf9c9d5ea9b9485365ae936d25dc66e28415f64ae8cbc545",
+  "skills/wallet-review/SKILL.md": "0cdc171e9a37b73fb8008edf81d186e8f739ae5efc44cc30355cd4f325daa98e",
   "skills/watch-alerts/SKILL.md": "b80322b81eebb14ed1f6d94b6cbc32f1967b050b373ca261f64dbd9fe36f6e4d"
  }
 }

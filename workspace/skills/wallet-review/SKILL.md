@@ -18,10 +18,12 @@ Take the address or username from the request or the profile. If missing, ask fo
 `python3 files/scripts/poly.py wallet <address or username>`: value, ranks, positions, recent trades, flags (`redeemable`, `closing_7d`, `big_losses`).
 
 ### 3. Look closer where it matters
+Each position has a `status`: open, ended (waiting for resolution), resolved: won (claim in the app) or resolved: lost. Do not look up resolved positions again: their status is final. If `open_positions` is 0, say so plainly and summarize the recent trades, the ranks and what was won or lost; that is the review.
+
 For the 3–5 largest positions and every `closing_7d` one: `poly.py market <slug>` (price now vs entry, spread, rules flags, resolution status). One web search only if a position moved a lot and the reason is unclear.
 
 ### 4. Write it up
-- **Claim:** winnings ready to be claimed (redeemable): remind that they are collected in the Polymarket app.
+- **Claim:** `to_claim` positions: remind that winnings are collected in the Polymarket app.
 - **Closing soon:** what has to happen, the current price, the resolution risk.
 - **Big moves and losses:** what changed; the options (hold, reduce, exit) with the facts behind each, not an instruction.
 - **Concentration:** share of the portfolio in the top position and in one topic.

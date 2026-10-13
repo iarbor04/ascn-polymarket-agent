@@ -188,15 +188,15 @@ def resolve(ref):
     """Returns (event or None, [markets]) for a link, slug or condition id."""
     ref = ref.strip()
     if re.fullmatch(r"0x[0-9a-fA-F]{64}", ref):
-        ms = get(f"{GAMMA}/markets", {"condition_ids": ref}) or []
+        ms = get(f"{GAMMA}/markets", {"condition_ids": ref}) or get(f"{GAMMA}/markets", {"condition_ids": ref, "closed": "true"}) or []
         return None, ms
     slug, event_slug = slug_from(ref)
     if not slug:
         fail("could not read a market from the reference", ref=ref)
-    ms = get(f"{GAMMA}/markets", {"slug": slug}) or []
+    ms = get(f"{GAMMA}/markets", {"slug": slug}) or get(f"{GAMMA}/markets", {"slug": slug, "closed": "true"}) or []
     if ms:
         return None, ms
-    evs = get(f"{GAMMA}/events", {"slug": event_slug or slug}) or []
+    evs = get(f"{GAMMA}/events", {"slug": event_slug or slug}) or get(f"{GAMMA}/events", {"slug": event_slug or slug, "closed": "true"}) or []
     if evs:
         return evs[0], evs[0].get("markets") or []
     found = get(f"{GAMMA}/public-search", {"q": slug.replace("-", " "), "limit_per_type": 3}) or {}
@@ -524,17 +524,26 @@ def trader_data(who, npos=15):
                   "value": money(p.get("currentValue")), "pnl": money(p.get("cashPnl")), "pnl_pct": num(p.get("percentPnl"), 1),
                   "end": p.get("endDate"), "days_left": days_left(p.get("endDate")), "redeemable": p.get("redeemable")}
                  for p in pos]
-    lost = [p for p in positions if p["price_now"] == 0 and not p["redeemable"]]
+    for p in positions:
+        if p["price_now"] in (0, 0.0) and (p["redeemable"] or (p["days_left"] or 0) < 0):
+            p["status"] = "resolved: lost"
+        elif p["redeemable"] and (p["price_now"] or 0) >= 0.99:
+            p["status"] = "resolved: won, claim in the Polymarket app"
+        elif (p["days_left"] or 0) < 0:
+            p["status"] = "ended, waiting for resolution"
+        else:
+            p["status"] = "open"
+    lost = [p for p in positions if p["status"] == "resolved: lost"]
     positions = [p for p in positions if p not in lost]
-    return w, name, value, ranks, positions, act, len(lost), len(pos) >= 200
+    return w, name, value, ranks, positions, act, lost, len(pos) >= 200
 
 
 def cmd_trader(a, mine=False):
     w, name, value, ranks, positions, act, lost, capped = trader_data(a.who)
     res = {"ok": True, "wallet": w, "name": name, "profile": f"https://polymarket.com/profile/{w}",
            "portfolio_value": money(value[0]["value"]) if value else None, "leaderboard": ranks,
-           "open_positions": len(positions), "open_pnl_total": money(sum(p["pnl"] or 0 for p in positions)),
-           "lost_positions_not_shown": lost,
+           "open_positions": sum(1 for p in positions if p["status"] == "open"), "open_pnl_total": money(sum(p["pnl"] or 0 for p in positions)),
+           "lost_positions_not_shown": len(lost),
            "note": "Only the 200 largest positions were loaded; totals cover those." if capped else None,
            "positions": positions[:getattr(a, "positions", 15)],
            "recent_trades": [{"time": iso(x["timestamp"]), "side": x.get("side"), "outcome": x.get("outcome"),
@@ -542,9 +551,10 @@ def cmd_trader(a, mine=False):
                              for x in act]}
     if mine:
         res["flags"] = {
-            "redeemable": [p for p in positions if p["redeemable"]],
-            "closing_7d": [p for p in positions if p["days_left"] is not None and 0 <= p["days_left"] <= 7],
-            "big_losses": [p for p in positions if (p["pnl_pct"] or 0) <= -40 and (p["value"] or 0) >= 10],
+            "to_claim": [p for p in positions if p["status"].startswith("resolved: won")],
+            "closing_7d": [p for p in positions if p["status"] == "open" and p["days_left"] is not None and 0 <= p["days_left"] <= 7],
+            "big_losses": [p for p in positions if p["status"] == "open" and (p["pnl_pct"] or 0) <= -40 and (p["value"] or 0) >= 10],
+            "lost_resolved": lost,
         }
         res["positions"] = positions
     out(res)
